@@ -24,4 +24,7 @@ body {
   font-family: 'NeueHaasDisplayPro', sans-serif;
   overflow-x: hidden;
 }
-
+html{
+  overflow-x: hidden;
+  
+}
