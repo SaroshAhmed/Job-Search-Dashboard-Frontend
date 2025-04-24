@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'NeueHaasDisplayPro';
+  src: url('/fonts/NeueHaasDisplayPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --custom-blue: #0154aa;
+}
+
+:root {
+  background-color: #F4F4F4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'NeueHaasDisplayPro', sans-serif;
+  overflow-x: hidden;
+}
+
