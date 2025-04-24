@@ -19,28 +19,31 @@ const JobSearch = () => {
           available today!
         </h3>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center bg-white px-4 py-4 rounded-xl gap-4 md:gap-0">
-        <h3 className="text-gray-500 text-sm">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center bg-white px-4 py-4 rounded-xl gap-4 md:gap-0">
+        <h3 className="text-gray-500 text-sm xl:text-sm lg:text-xs">
           Job Title, Company, or Keywords
         </h3>
 
-        <div className="flex flex-col sm:flex-row justify-end w-full md:w-auto gap-4">
-          <div className="flex gap-3 items-center text-gray-500 text-sm border-t sm:border-t-0 sm:border-l border-gray-200 pt-4 sm:pt-0 sm:px-4">
-            <h3>Select Location</h3>
+        <div className="flex flex-col lg:flex-row justify-end w-full md:w-auto gap-4">
+          <div className="flex gap-3 items-center text-gray-500 text-sm border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:px-4">
+            <h3 className="text-gray-500 text-sm xl:text-sm lg:text-xs">
+              Select Location
+            </h3>
             <img src={dropdownIcon2} alt="Dropdown" />
           </div>
 
           <div className="flex gap-3 items-center text-gray-500 text-sm border-t sm:border-t-0 sm:border-l border-gray-200 pt-4 sm:pt-0 sm:px-4">
-            <h3>Job Type</h3>
+            <h3 className="text-gray-500 text-sm xl:text-sm lg:text-xs">
+              Job Type
+            </h3>
             <img src={dropdownIcon2} alt="Dropdown" />
           </div>
 
           {/* Search Button */}
-          {/* <div className="flex gap-3 items-center justify-center px-6 py-2 bg-[var(--custom-blue)] rounded-lg text-sm">
+          <Button className="flex items-center gap-3">
             <img src={searchIcon} alt="Search" className="h-4 w-4" />
-            <h5 className="text-white">Search</h5>
-          </div> */}
-          <Button className="flex items-center gap-3"> <img src={searchIcon} alt="Search" className="h-4 w-4" /> Search</Button>
+            Search
+          </Button>
         </div>
       </div>
 
@@ -59,7 +62,7 @@ const JobSearch = () => {
           See Featured Jobs
         </a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-5 justify-self-center">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-1 xl:gap-5 lg:grid-cols-3 lg:gap-5 justify-self-center lg:justify-self-start">
         {cards5.map((_, index) => (
           <Card key={`featured-${index}`} />
         ))}
@@ -72,7 +75,7 @@ const JobSearch = () => {
           See Featured Jobs
         </a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-5 justify-self-center">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-1 xl:gap-5 lg:grid-cols-3 lg:gap-5 justify-self-center lg:justify-self-start">
         {cards10.map((_, index) => (
           <Card key={`recommended-${index}`} />
         ))}
@@ -85,7 +88,7 @@ const JobSearch = () => {
           See Latest Jobs
         </a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-5 justify-self-center">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-1 xl:gap-5 lg:grid-cols-3 lg:gap-5 justify-self-center lg:justify-self-start">
         {cards10.map((_, index) => (
           <Card key={`recommended-${index}`} />
         ))}

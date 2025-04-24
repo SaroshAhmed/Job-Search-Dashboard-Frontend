@@ -9,12 +9,12 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white shadow-md">
-      <div className="flex justify-between items-center py-4 px-6 lg:px-8">
+      <div className="flex justify-between items-center py-4 px-6 xl:px-8">
         {/* Logo */}
         <img src={logo} alt="Logo" className="h-10 shrink-0" />
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex items-center gap-6 text-sm text-gray-500">
+        <ul className="hidden xl:flex items-center gap-6 text-sm text-gray-500">
           <li className="text-[var(--custom-blue)] font-bold">Find Jobs</li>
           <li>Top Companies</li>
           <li>Job Tracker</li>
@@ -25,7 +25,7 @@ const Navbar = () => {
         </ul>
 
         {/* Search Bar */}
-        <form className="hidden lg:flex">
+        <form className="hidden xl:flex">
           <div className="flex items-center gap-2 bg-[#F6F9FF] rounded px-3 py-2">
             <img src={searchIcon} alt="Search" />
             <input
@@ -37,14 +37,14 @@ const Navbar = () => {
         </form>
 
         {/* Right Side */}
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden xl:flex items-center gap-4">
           <Button>Resume Builder</Button>
           <img src={profileIcon} alt="Profile" className="h-10 w-10 rounded-full" />
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden block text-gray-600"
+          className="xl:hidden block text-gray-600"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
@@ -59,7 +59,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden px-6 pb-4">
+        <div className="xl:hidden px-6 pb-4">
           <ul className="flex flex-col gap-3 text-gray-700">
             <li className="text-[var(--custom-blue)] font-bold">Find Jobs</li>
             <li>Top Companies</li>
@@ -81,7 +81,7 @@ const Navbar = () => {
             </div>
           </form>
 
-          <div className="mt-4 flex flex-row justify-between md:flex-col gap-3">
+          <div className="mt-4 flex flex-row justify-between xl:flex-col gap-3">
             <Button variant="primary">Resume Builder</Button>
             <img src={profileIcon} alt="Profile" className="h-10 w-10 rounded-full self-start" />
           </div>

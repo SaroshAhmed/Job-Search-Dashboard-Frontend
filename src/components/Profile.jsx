@@ -13,7 +13,7 @@ const Profile = () => {
         <img
           src={profilePicture}
           alt="User"
-          className="absolute top-12 right-32 "
+          className="absolute xl:top-12 xl:right-32 top-12 right-32 lg:top-9 lg:right-28 md:top-8 md:right-25"
         />
         <div className="text-center mt-10">
           <h1 className="font-bold text-xl">Albert Flores</h1>
